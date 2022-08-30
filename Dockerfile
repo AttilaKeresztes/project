@@ -12,6 +12,7 @@ RUN MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE} \
 RUN install2.r --error --skipinstalled \ 
   here \ 
   lubridate \ 
+  plyr \ 
   tidyverse
 RUN installGithub.r \ 
   aaronpeikert/repro@fc7e884
